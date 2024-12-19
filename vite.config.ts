@@ -1,19 +1,17 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
-  esbuild: {
-    jsxInject: `const React  = ''`
-  },
   build: {
+    outDir: resolve(__dirname, 'dist'),
+    emptyOutDir: false,
     minify: false,
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
       name: 'Ext',
-      fileName: () => 'ext.js',
+      fileName: () => 'index.js',
       formats: ['iife'],
-      cssFileName: 'ext'
+      cssFileName: 'index'
     }
   }
 })

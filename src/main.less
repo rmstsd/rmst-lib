@@ -1,7 +1,112 @@
-body {
-  max-width: 100vw;
+.smart-call-material {
+  max-width: 1200px;
+}
 
-  & .d {
-    color: red;
-  }
+.smart-call-material .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smart-call-material .header-left {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.smart-call-material .header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.smart-call-material .header-right > span {
+  white-space: nowrap;
+}
+
+.smart-call-material .header-right > * {
+}
+
+/*  */
+.smart-call-material .main-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.smart-call-material .main-container .left-title,
+.smart-call-material .main-container .right-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.smart-call-material .main-container > .left {
+  width: 0;
+  flex: 1;
+}
+
+.smart-call-material .main-container > .left td {
+  padding: 6px !important;
+}
+
+.smart-call-material .main-container .divider {
+  width: 1px;
+  background-color: #ddd;
+  margin: 0 20px;
+}
+
+.smart-call-material .main-container > .right {
+  flex: 1;
+}
+
+.order-container {
+}
+
+.smart-call-material .order-item {
+  border: 1px solid #333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.smart-call-material .status-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smart-call-material .status-tag {
+  border: 1px solid #333;
+  padding: 6px;
+}
+
+/*  */
+.smart-call-material .info-container {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.smart-call-material .info-container > .left,
+.smart-call-material .info-container > .middle,
+.smart-call-material .info-container > .right {
+  text-align: center;
+}
+
+.smart-call-material .info-value {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/*  */
+.smart-call-material .base-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.smart-call-material .base-container > .left,
+.smart-call-material .base-container > .right {
+  display: flex;
+  gap: 6px;
 }
